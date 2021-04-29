@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "torchvae"
+version = "0.1.0"
+description = "A simple implementation of a variational autoencoder for PyTorch"
+authors = ["Santiago SILVA <16252054+sssilvar@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+torch = "^1.8.1"
+pytorch-lightning = "^1.2.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.3"
+torchvision = "^0.9.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
