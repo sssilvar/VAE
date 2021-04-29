@@ -23,7 +23,7 @@ class LitVAE(pl.LightningModule):
 
         y_pred = self(x)
         nll = -y_pred.log_prob(x).sum()
-        loss = self.kld - nll
+        loss = self.kld + nll
 
         self.log('Train/Loss', loss, prog_bar=True)
         self.log('Train/KLD', self.kld, prog_bar=True)
